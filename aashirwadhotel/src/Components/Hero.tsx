@@ -7,9 +7,10 @@ export const Hero = () => {
     dots: false,
     autoplay: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 1000,
   };
   const images = [
     {
@@ -37,12 +38,12 @@ export const Hero = () => {
                 className="h-screen w-screen hover:scale-105 duration-1000 bg-fixed object-cover"
               />
               <div className="absolute top-1/2 w-full">
-                {/* <h1 className=" font-poppins text-white text-8xl text-center w-full">
-                    {image.text}
-                  </h1>
-                  <button className="flex mx-auto  p-4 font-mono cursor-pointer hover:bg-black transition duration-800 text-4xl  text-white bg-[#10377a]">
-                    Find More
-                  </button> */}
+                <h1 className=" font-title text-white text-8xl text-center w-full">
+                  {image.text}
+                </h1>
+                <button className="flex mx-auto p-2 font-heading cursor-pointer hover:bg-black transition duration-800 text-lg  text-white bg-[#10377a]">
+                  Find More
+                </button>
               </div>
             </div>
           ))}

@@ -14,7 +14,7 @@ export const Services = () => {
               SERVICES
             </h1>
           </div>
-          <div className="flex flex-wrap justify-center font-heading gap-5 2xl:gap-20 pt-20 text-white between w-full  mx-auto">
+          <div className="flex flex-wrap justify-center px-1 font-heading gap-3 2xl:gap-20 pt-20 text-white between w-full  mx-auto">
             <div className="flex justify-center flex-wrap gap-5 2xl:gap-20">
               <div className="">
                 <div

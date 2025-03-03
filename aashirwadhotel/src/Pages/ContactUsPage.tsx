@@ -4,8 +4,16 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
 
 export const ContactUsPage = () => {
+  const offsetTop = 0;
+  useEffect(() => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <div className="bg-[#eeeeee]">

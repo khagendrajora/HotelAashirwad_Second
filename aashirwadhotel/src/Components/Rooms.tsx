@@ -7,7 +7,6 @@ export const Rooms = () => {
     dots: true,
     autoplay: true,
     infinite: true,
-
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
@@ -39,14 +38,14 @@ export const Rooms = () => {
                   <div className="md:w-2/5 sm:p-10 gap-2 p-3 flex flex-col bg-white">
                     <div className="flex flex-col sm:gap-10 gap-5">
                       <div className="flex flex-col gap-4">
-                        <h1 className="text-4xl font-heading text-[#1C1C1C]">
+                        <h1 className="text-4xl 2xl:text-6xl font-heading text-[#1C1C1C]">
                           Twin Room
                         </h1>
-                        <p className="text-[#6A6A6A] font-text">
+                        <p className="text-[#6A6A6A] 2xl:text-3xl font-heading">
                           A quality room you want
                         </p>
                       </div>
-                      <p className=" sm:text-lg  font-text text-[#6A6A6A]">
+                      <p className=" sm:text-lg 2xl:text2xl  font-text text-[#6A6A6A]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Quia reprehenderit dolorem laudantium, id
                         officiis, veritatis possimus minus natus dolores
@@ -54,8 +53,8 @@ export const Rooms = () => {
                     </div>
                     <div className="flex justify-between font-text mt-auto w-11/12  text-orange-500 sm:text-2xl items-baseline">
                       <div>100/Night</div>
-                      <button className="cursor-pointer hover:text-black duration-1000">
-                        View More
+                      <button className="cursor-pointer font-heading hover:text-black duration-1000">
+                        Learn More...
                       </button>
                     </div>
                   </div>
@@ -73,23 +72,23 @@ export const Rooms = () => {
                   <div className="md:w-2/5 sm:p-10 gap-2 p-3 flex flex-col bg-white">
                     <div className="flex flex-col sm:gap-10 gap-5 ">
                       <div className="flex font-heading flex-col gap-4">
-                        <h1 className="text-4xl  text-[#1C1C1C]">
+                        <h1 className="text-4xl  2xl:text-6xl text-[#1C1C1C]">
                           Family Room
                         </h1>
-                        <p className="text-[#6A6A6A] font-text ">
+                        <p className="text-[#6A6A6A] 2xl:text-3xl font-heading ">
                           A quality room you want
                         </p>
                       </div>
-                      <p className=" sm:text-lg  font-text text-[#6A6A6A]">
+                      <p className=" sm:text-lg 2xl:text2xl font-text text-[#6A6A6A]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Quia reprehenderit dolorem laudantium, id
                         officiis, veritatis possimus minus natus dolores
                       </p>
                     </div>
-                    <div className="flex justify-between font-text mt-auto w-11/12  text-orange-500 md:text-2xl items-baseline">
+                    <div className="flex justify-between font-heading  mt-auto w-11/12  text-orange-500 md:text-2xl items-baseline">
                       <div>100/Night</div>
-                      <button className="cursor-pointer hover:text-black duration-1000">
-                        View More
+                      <button className="cursor-pointer font-heading hover:text-black duration-1000">
+                        Learn More...
                       </button>
                     </div>
                   </div>
@@ -107,18 +106,20 @@ export const Rooms = () => {
                   <div className="md:w-2/5 sm:p-10 gap-2 p-3 flex flex-col bg-white">
                     <div className="flex flex-col sm:gap-10 gap-5 ">
                       <div className="flex font-heading flex-col gap-4">
-                        <h1 className="text-4xl  text-[#1C1C1C]">Suite Room</h1>
-                        <p className="text-[#6A6A6A] font-text ">
+                        <h1 className="text-4xl 2xl:text-6xl  text-[#1C1C1C]">
+                          Suite Room
+                        </h1>
+                        <p className="text-[#6A6A6A] 2xl:text-3xl font-heading ">
                           A quality room you want
                         </p>
                       </div>
-                      <p className=" sm:text-lg  font-text text-[#6A6A6A]">
+                      <p className=" sm:text-lg 2xl:text2xl  font-text text-[#6A6A6A]">
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Quia reprehenderit dolorem laudantium, id
                         officiis, veritatis possimus minus natus dolores
                       </p>
                     </div>
-                    <div className="flex justify-between font-text mt-auto w-11/12  text-orange-500 md:text-2xl items-baseline">
+                    <div className="flex justify-between font-heading mt-auto w-11/12  text-orange-500 md:text-2xl items-baseline">
                       <div>100/Night</div>
                       <button className="cursor-pointer hover:text-black duration-1000">
                         View More

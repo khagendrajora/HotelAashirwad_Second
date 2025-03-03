@@ -1,8 +1,15 @@
 import { faCheck, faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const RoomDetail = () => {
+  const offsetTop = 0;
+  useEffect(() => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   const [isActive, setIsActive] = useState("description");
   return (
     <>
@@ -24,7 +31,7 @@ export const RoomDetail = () => {
         <div className="w-10/12 mx-auto ">
           <div className="flex lg:gap-10 flex-wrap py-10 justify-between">
             <div className="flex flex-col lg:w-3/5">
-              <div className="flex flex-wrap py-2 justify-between">
+              <div className="flex flex-wrap gap-1 py-2 md:justify-between">
                 <h1 className="lg:text-3xl font-heading text-gray-500">
                   A quality room with mountail view
                 </h1>
@@ -42,11 +49,11 @@ export const RoomDetail = () => {
                 {" "}
                 Luxary Double Suite Room
               </h1> */}
-              <div className="pt-5 w-full">
+              <div className="pt-5   w-full">
                 <img
                   src="/room.jpg"
                   alt="rooms"
-                  className="object-cover w- mx-auto"
+                  className="object-cover mx-auto"
                 />
                 {/* 
                 <div className="flex flex-wrap justify-center gap-4 lg:gap-10 py-5">
@@ -74,7 +81,7 @@ export const RoomDetail = () => {
                 </div> */}
               </div>
               <div className="flex flex-wrap gap-[11px] gap-y-10 py-10 justify-between text-sm font-playfair font-normal">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col  items-center">
                   <img
                     src="/Icons/bath-tub.png"
                     className="object-cover w-10 h-10"
@@ -119,7 +126,7 @@ export const RoomDetail = () => {
                 </div>
               </div>
 
-              <div className="flex gap-10 text-xl py-4 font-heading ">
+              <div className="flex  gap-2 lg:gap-10 md:text-xl py-4 font-heading ">
                 <button
                   className={`${
                     isActive === "description" ? "text-orange-600" : ""
@@ -134,7 +141,7 @@ export const RoomDetail = () => {
                   } hover:text-orange-600 cursor-pointer`}
                   onClick={() => setIsActive("services")}
                 >
-                  ROOM SERVICES
+                  ROOM&nbsp;SERVICES
                 </button>
                 <button
                   className={`${
@@ -336,7 +343,7 @@ export const RoomDetail = () => {
                   </ul>
                 </div>
               )}
-              <div className="flex flex-col  py-10">
+              <div className="flex flex-col w-11/12  py-10">
                 <h1 className="text-2xl font-heading">ROOM DETAILS</h1>
                 <ul className="py-4 font-text text-gray-500 space-y-4">
                   <li>
@@ -382,7 +389,7 @@ export const RoomDetail = () => {
                 </ul>
               </div>
 
-              <div>
+              <div className="w-11/12 ">
                 <h1 className="font-heading text-2xl uppercase text-[#1C1C1C]">
                   Like This Room?
                 </h1>
@@ -400,7 +407,7 @@ export const RoomDetail = () => {
                   Your email adddress will not be published.
                 </p>
 
-                <div className="py-5 space-y-3 text-[#6C6C6C]">
+                <div className="py-5 px-1 space-y-3 text-[#6C6C6C]">
                   <div className="flex flex-col gap-1">
                     <label>Comment</label>
                     <textarea
@@ -423,14 +430,14 @@ export const RoomDetail = () => {
                       className="border p-2 bg-[#F5F5F5]"
                     />
                   </div>
-                  <button className="border p-2 bg-[#10377a] text-white">
+                  <button className="border p-2 bg-[#10377a] hover:bg-black transition-all duration-400 cursor-pointer text-white">
                     Add Comment
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="lg:w-1/3  lg:mt-24">
+            <div className="w-11/12 lg:w-1/3  lg:mt-24">
               <div className="w-full mx-auto">
                 <h1 className="text-3xl mx-auto font-heading font-bold text-[#6A6A6A]">
                   Book Reservation
@@ -452,16 +459,16 @@ export const RoomDetail = () => {
                       className="border p-1 text-gray-400 rounded "
                     />
                   </div>
-                  <div className="flex justify-between  py-4">
+                  <div className="flex flex-wrap gap-3 justify-between  py-4">
                     <input
                       type="number"
                       placeholder="Adults"
-                      className="border p-1 text-gray-400 rounded "
+                      className="border p-1 w-full text-gray-400 rounded "
                     ></input>
                     <input
                       type="number"
                       placeholder="Children"
-                      className="border p-1 text-gray-400 rounded "
+                      className="border p-1 w-full text-gray-400 rounded "
                     ></input>
                   </div>
                   <div className="flex flex-col gap-5 ">
@@ -482,7 +489,7 @@ export const RoomDetail = () => {
                     />
                   </div>
                   <div className="w-full py-4">
-                    <button className="p-3 w-full lg:w-3/4 hover:bg-black cursor-pointer rounded bg-[#10377a] text-white">
+                    <button className="p-3 w-full lg:w-3/4 hover:bg-black cursor-pointer rounded duration-400 transition-all bg-[#10377a] text-white">
                       BOOK A ROOM NOW
                     </button>
                   </div>

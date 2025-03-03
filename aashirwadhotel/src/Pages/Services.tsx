@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const Services = () => {
+  const offsetTop = 0;
+  useEffect(() => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <div className="">
@@ -95,7 +103,7 @@ export const Services = () => {
             <div className="py-5">
               <Link
                 to=""
-                className=" uppercase bg-[#10377a]  text-[16px] p-2 font-heading"
+                className=" uppercase bg-[#10377a] hover:bg-black transition-all duration-400  text-[16px] p-2 font-heading"
               >
                 Book Now
               </Link>

@@ -45,32 +45,32 @@ export const Testimonials = () => {
               <h1 className="font-title w-full  text-8xl lg:text-[140px] opacity-10">
                 Client
               </h1>
-              <h1 className=" -mt-10 lg:-mt-16 font-normal font-heading text-[#10377a] text-[30px] lg:text-[40px]">
+              <h1 className=" -mt-10 lg:-mt-16  font-heading text-[#10377a] text-[30px] lg:text-[40px]">
                 TESTIMONIALS
               </h1>
             </div>
           </div>
         </div>
 
-        <div className="slider-container md:w-3/5 mx-auto overflow-hidden px- ">
+        <div className="slider-container md:w-3/4 lg:w-3/5 mx-auto overflow-hidden px- ">
           <Slider {...settings}>
             <div className="flex flex-col text-center space-y-6 p-2 md:p-10 hover:bg-white">
               <div className="w-full flex justify-center">
                 <img
-                  src="Icons/logo.jpeg"
+                  src="/testmonial1.jpg"
                   alt=""
-                  className="w-14 rounded-full"
+                  className="w-14 h-14 object-cover rounded-full"
                 />
               </div>
               <div className="flex flex-col gap-6">
-                <p className="text-[#1C1C1C] font-text text-[20px]">
+                <p className="text-[#1C1C1C] font-heading md:text-[28px]  lg:text-[36px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quibusdam fugit fugiat, laudantium asperiores aut
                   expedita natus nisi! Saepe iure molestiae nam. Excepturi
                   cumque ea pariatur quae debitis velit id?
                 </p>
                 <div>
-                  <h1 className="font-normal font-heading">
+                  <h1 className="text-[20px] font-heading">
                     Khagendra Singh Jora
                   </h1>
                   <p className="font-text">Developer</p>
@@ -80,20 +80,20 @@ export const Testimonials = () => {
             <div className="flex flex-col text-center space-y-6 p-2 md:p-10 hover:bg-white">
               <div className="w-full flex justify-center">
                 <img
-                  src="Icons/logo.jpeg"
+                  src="/testmonial2.jpg"
                   alt=""
-                  className="w-14 rounded-full"
+                  className="w-14 h-14 object-cover rounded-full"
                 />
               </div>
               <div className="flex flex-col gap-6">
-                <p className="text-[#1C1C1C] font-text text-[20px]">
+                <p className="text-[#1C1C1C] font-heading md:text-[28px] lg:text-[36px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quibusdam fugit fugiat, laudantium asperiores aut
                   expedita natus nisi! Saepe iure molestiae nam. Excepturi
                   cumque ea pariatur quae debitis velit id?
                 </p>
                 <div>
-                  <h1 className="font-normal font-heading">
+                  <h1 className="text-[20px] font-heading">
                     Khagendra Singh Jora
                   </h1>
                   <p className="font-text">Developer</p>
@@ -103,20 +103,20 @@ export const Testimonials = () => {
             <div className="flex flex-col text-center space-y-6 p-2 md:p-10 hover:bg-white ">
               <div className="w-full flex justify-center">
                 <img
-                  src="Icons/logo.jpeg"
+                  src="/testmonial3.jpg"
                   alt=""
-                  className="w-14 rounded-full"
+                  className="w-14 h-14 object-cover rounded-full"
                 />
               </div>
               <div className="flex flex-col gap-6">
-                <p className="text-[#1C1C1C] font-text text-[20px]">
+                <p className="text-[#1C1C1C] font-heading md:text-[28px] lg:text-[36px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quibusdam fugit fugiat, laudantium asperiores aut
                   expedita natus nisi! Saepe iure molestiae nam. Excepturi
                   cumque ea pariatur quae debitis velit id?
                 </p>
                 <div>
-                  <h1 className="font-normal font-heading">
+                  <h1 className="text-[20px] font-heading">
                     Khagendra Singh Jora
                   </h1>
                   <p className="font-text">Developer</p>
@@ -126,20 +126,20 @@ export const Testimonials = () => {
             <div className="flex flex-col text-center space-y-6 p-2 md:p-10 hover:bg-white ">
               <div className="w-full flex justify-center">
                 <img
-                  src="Icons/logo.jpeg"
+                  src="/testmonial1.jpg"
                   alt=""
-                  className="w-14 rounded-full"
+                  className="w-14 h-14 object-cover rounded-full"
                 />
               </div>
               <div className="flex flex-col gap-6">
-                <p className="text-[#1C1C1C] font-text text-[20px]">
+                <p className="text-[#1C1C1C] font-heading md:text-[28px] lg:text-[36px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Magnam quibusdam fugit fugiat, laudantium asperiores aut
                   expedita natus nisi! Saepe iure molestiae nam. Excepturi
                   cumque ea pariatur quae debitis velit id?
                 </p>
                 <div>
-                  <h1 className="font-normal font-heading">
+                  <h1 className="text-[20px] font-heading">
                     Khagendra Singh Jora
                   </h1>
                   <p className="font-text">Developer</p>

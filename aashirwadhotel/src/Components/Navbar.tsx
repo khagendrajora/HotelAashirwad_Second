@@ -29,13 +29,13 @@ export const Navbar = () => {
   }, []);
   return (
     <>
-      <div className=" font-text text-black bg-white fixed  w-full z-40">
+      <div className=" font-text shadow-2xl text-black bg-white fixed  w-full z-40">
         <div className="flex justify-between relative z-20 lg:gap-10 w-full  ">
           <div className="flex  px-2 items-center z-40 gap-1">
             <img
               src="/Icons/logo.jpeg"
               alt="logo"
-              className="w-[100px] lg:h-[100px]  absolute z-[99999] top-1 block  object-center"
+              className="md:w-[130px] w-[80px] absolute z-[99999] top-1 block  object-center"
             />
             {/* <h1 className="lg:hidden font-heading font-semibold text-[40px] text-[#10377a]">
               Hotel&nbsp;Aashirwad
@@ -60,7 +60,7 @@ export const Navbar = () => {
                 className="cursor-pointer bg-[#10377a] text-white border p-2 rounded "
               />
             </div>
-            <ul className="lg:flex hidden items-center h-fit w-fit text-xl list-none gap-8">
+            <ul className="lg:flex font-bold hidden font-heading items-center h-fit w-fit text-xl list-none gap-8">
               <li className="hover:text-[#10377a] transition duration-500 cursor-pointer">
                 <Link to="/"> Home</Link>
               </li>
@@ -93,7 +93,7 @@ export const Navbar = () => {
               size="xl"
               className="text-gray-600"
             />
-            <button className=" h-full  p-4 transition duration-500  justify-between hover:bg-black hover:text-white   bg-[#10377a]  cursor-pointer text-white  text-xl">
+            <button className=" h-full p-3 transition duration-500  justify-between hover:bg-black hover:text-white   bg-[#10377a]  cursor-pointer text-white  text-xl">
               <Link to="/reservation">Reservation</Link>
             </button>
           </div>
@@ -107,7 +107,7 @@ export const Navbar = () => {
     ${isMenu ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}
   `}
       >
-        <ul className="w-full p-10 text-2xl bg-[#10377a]  list-none text-gray-500 flex flex-col gap-7  ">
+        <ul className="w-full p-10 text-2xl bg-[#10377a] font-heading font-bold list-none text-gray-500 flex flex-col gap-7  ">
           <li className="hover:text-black transition duration-500 cursor-pointer">
             <Link to="/"> Home</Link>
           </li>
@@ -119,16 +119,16 @@ export const Navbar = () => {
           </li>
 
           <li className="hover:text-black transition duration-500 cursor-pointer">
-            Services
+            <Link to="/services">Services</Link>
           </li>
           <li className="hover:text-black transition duration-500 cursor-pointer">
-            Review
+            <Link to="/blogs">Blogs</Link>
           </li>
           <li className="hover:text-black transition duration-500 cursor-pointer">
             <Link to="/contactus">Contact</Link>
           </li>
           <button className="hover:text-black transition duration-500 cursor-pointer">
-            <Link to="/reservationform">Reservation</Link>
+            <Link to="/reservation">Reservation</Link>
           </button>
         </ul>
       </div>

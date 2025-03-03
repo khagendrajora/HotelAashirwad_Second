@@ -1,4 +1,13 @@
+import { useEffect } from "react";
+
 export const ReservationPage = () => {
+  const offsetTop = 0;
+  useEffect(() => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <div className="">
@@ -15,18 +24,18 @@ export const ReservationPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#eeeeee] lg:py-16">
+      <div className="bg-[#eeeeee] py-10 lg:py-16">
         {/* <div className="bg-[url('/bgimage.jpg')] absolute inset-0 bg-cover opacity-20 "></div> */}
         <div>
           <div className=" w-full text-center">
             <h1 className="font-title w-full  text-8xl lg:text-[120px] opacity-10">
               Welcome{" "}
             </h1>
-            <h1 className="font-heading -mt-10 lg:-mt-12 text-[#10377a] text-6xl">
+            <h1 className="font-heading -mt-10 lg:-mt-12 text-[#10377a] text-2xl lg:text-6xl">
               MAKE A RESERVATION
             </h1>
           </div>
-          <div className="py-10 w-1/3  mx-auto">
+          <div className="py-10  md:w-1/2 w-11/12 sm:w-3/4  mx-auto">
             <form className="flex font-text flex-col text-gray-500 gap-5">
               <div className="flex flex-col gap-2">
                 <label>Name</label>
@@ -102,7 +111,7 @@ export const ReservationPage = () => {
         <div className="flex items-center flex-col">
           <hr />
           <h1 className="text-[40px] font-heading">FAQ</h1>
-          <button className="uppercase w-1/3 text-orange-600 mt-10 text-start font-heading text-[20px] bg-white px-[14px] py-[16px] border border-gray-400">
+          <button className="uppercase  md:w-1/2 w-11/12 sm:w-3/4 text-orange-600 mt-10 text-start font-heading text-[20px] bg-white px-[14px] py-[16px] border border-gray-400">
             do you have onsite package?
           </button>
           <p className="py-5 text-start font-text text-[18px] text-[#6A6A6A]">

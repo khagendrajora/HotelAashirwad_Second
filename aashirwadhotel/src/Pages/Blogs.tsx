@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const Blogs = () => {
+  const offsetTop = 0;
+  useEffect(() => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <div className="">
@@ -11,19 +19,19 @@ export const Blogs = () => {
             className="w-full h-[400px] object-cover"
           />
           <div className="absolute top-1/2 w-full">
-            <h1 className="uppercase font-heading text-white text-8xl text-center w-full">
+            <h1 className="uppercase font-heading text-white text-6xl lg:text-8xl text-center w-full">
               blogs
             </h1>
           </div>
         </div>
 
-        <div className="w-3/5 py-10 mx-auto">
+        <div className="lg:w-3/5 w-11/12 2xl:w-1/2 py-10 mx-auto">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col">
               <div className="text-[#9999] font-text text-[16px]">
                 May 23,2000
               </div>
-              <div className="text-[40px] font-heading py-2">
+              <div className="lg:text-[40px] text-xl uppercase font-heading py-2">
                 Leave your wallet at home
               </div>
               <hr />
@@ -31,9 +39,13 @@ export const Blogs = () => {
                 by:<span className="text-orange-600"> Khagendra</span>
               </p>
               <div>
-                <img src="/blog1.jpg" alt="" className="object-cover" />
+                <img
+                  src="/annapurna-south-exp.-2.jpg"
+                  alt=""
+                  className="object-cover"
+                />
               </div>
-              <p className="py-5 font-text text-[18px]">
+              <p className="py-5 font-text lg:text-[18px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 dignissimos aspernatur, est nulla quisquam at rem doloremque
                 sunt iste asperiores saepe et iusto molestias expedita
@@ -47,7 +59,7 @@ export const Blogs = () => {
               <div className="text-[#9999] font-text text-[16px]">
                 May 23,2000
               </div>
-              <div className="text-[40px] font-heading py-2">
+              <div className="lg:text-[40px] text-xl uppercase font-heading py-2">
                 Leave your wallet at home
               </div>
               <hr />
@@ -57,7 +69,7 @@ export const Blogs = () => {
               <div>
                 <img src="/blog1.jpg" alt="" className="object-cover" />
               </div>
-              <p className="py-5 font-text text-[18px]">
+              <p className="py-5 font-text lg:text-[18px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 dignissimos aspernatur, est nulla quisquam at rem doloremque
                 sunt iste asperiores saepe et iusto molestias expedita
