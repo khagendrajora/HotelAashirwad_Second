@@ -32,7 +32,7 @@ export const Rooms = () => {
                 <div className="flex w-11/12 lg:w-3/4 flex-wrap flex-col md:flex-row  mx-auto">
                   <div className="w-full md:w-3/5">
                     <img
-                      src="/GOVL1878.JPG"
+                      src="/twin_room.jpg"
                       className="h-[500px] w-full object-cover"
                     />
                   </div>
@@ -40,7 +40,7 @@ export const Rooms = () => {
                     <div className="flex flex-col sm:gap-10 gap-5">
                       <div className="flex flex-col gap-4">
                         <h1 className="text-4xl font-heading text-[#1C1C1C]">
-                          Luxury Single Room
+                          Twin Room
                         </h1>
                         <p className="text-[#6A6A6A] font-text">
                           A quality room you want
@@ -65,7 +65,7 @@ export const Rooms = () => {
                 <div className="flex w-11/12  lg:w-3/4 flex-wrap flex-col md:flex-row mx-auto">
                   <div className="w-full md:w-3/5">
                     <img
-                      src="/GOVL1878.JPG"
+                      src="/family_room.png"
                       className="h-[500px] w-full object-cover"
                     />
                   </div>
@@ -74,8 +74,40 @@ export const Rooms = () => {
                     <div className="flex flex-col sm:gap-10 gap-5 ">
                       <div className="flex font-heading flex-col gap-4">
                         <h1 className="text-4xl  text-[#1C1C1C]">
-                          Double Room
+                          Family Room
                         </h1>
+                        <p className="text-[#6A6A6A] font-text ">
+                          A quality room you want
+                        </p>
+                      </div>
+                      <p className=" sm:text-lg  font-text text-[#6A6A6A]">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quia reprehenderit dolorem laudantium, id
+                        officiis, veritatis possimus minus natus dolores
+                      </p>
+                    </div>
+                    <div className="flex justify-between font-text mt-auto w-11/12  text-orange-500 md:text-2xl items-baseline">
+                      <div>100/Night</div>
+                      <button className="cursor-pointer hover:text-black duration-1000">
+                        View More
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex w-11/12  lg:w-3/4 flex-wrap flex-col md:flex-row mx-auto">
+                  <div className="w-full md:w-3/5">
+                    <img
+                      src="/suite_room.png"
+                      className="h-[500px] w-full object-cover"
+                    />
+                  </div>
+
+                  <div className="md:w-2/5 sm:p-10 gap-2 p-3 flex flex-col bg-white">
+                    <div className="flex flex-col sm:gap-10 gap-5 ">
+                      <div className="flex font-heading flex-col gap-4">
+                        <h1 className="text-4xl  text-[#1C1C1C]">Suite Room</h1>
                         <p className="text-[#6A6A6A] font-text ">
                           A quality room you want
                         </p>

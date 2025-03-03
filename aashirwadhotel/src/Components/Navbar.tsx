@@ -72,10 +72,10 @@ export const Navbar = () => {
               </li>
 
               <li className="hover:text-[#10377a] transition duration-500 cursor-pointer">
-                Services
+                <Link to="/services">Services</Link>
               </li>
               <li className="hover:text-[#10377a] transition duration-500 cursor-pointer">
-                Review
+                <Link to="/blogs">Blogs</Link>
               </li>
               <li className="hover:text-[#10377a] transition duration-500 cursor-pointer">
                 <Link to="/contactus">Contact</Link>
@@ -94,7 +94,7 @@ export const Navbar = () => {
               className="text-gray-600"
             />
             <button className=" h-full  p-4 transition duration-500  justify-between hover:bg-black hover:text-white   bg-[#10377a]  cursor-pointer text-white  text-xl">
-              <Link to="/reservationform">Reservation</Link>
+              <Link to="/reservation">Reservation</Link>
             </button>
           </div>
         </div>

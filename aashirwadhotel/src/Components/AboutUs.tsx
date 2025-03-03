@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const AboutUs = () => {
   return (
     <>
@@ -15,9 +17,9 @@ export const AboutUs = () => {
               lakeside of popular lake all over the world called Fewa Lake
             </p>
           </div>
-          <button className="font-heading  text-[#10377a] text-[28px]">
+          <Link to="" className="font-heading   text-[#10377a] text-[28px]">
             View our Services
-          </button>
+          </Link>
           <div className="flex justify-center flex-wrap py-16 gap-5">
             <div className="">
               <img

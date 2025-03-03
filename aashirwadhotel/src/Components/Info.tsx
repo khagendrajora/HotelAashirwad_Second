@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Info = () => {
   return (
     <>
@@ -18,9 +20,12 @@ export const Info = () => {
             <h1 className="-mt-16 w-3/4 font-heading text-[40px] lg:text-[50px]">
               TAKE ADVANTAGE OF OUR SEASONAL SPECIALS
             </h1>
-            <h1 className="text-[#c19b76] text-[28px] py-5 font-heading">
+            <Link
+              to=""
+              className="text-[#c19b76] text-[28px] py-5 font-heading"
+            >
               Make a Reservation
-            </h1>
+            </Link>
           </div>
         </div>
       </div>
